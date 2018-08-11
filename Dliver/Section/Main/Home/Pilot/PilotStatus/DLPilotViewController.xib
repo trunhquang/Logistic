@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DLPilotViewController" customModule="DliverDev" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonAction" destination="HWE-TP-TwB" id="02b-aK-xam"/>
+                <outlet property="buttonContrainsHeight" destination="SLz-GH-kWY" id="Xri-ER-F1I"/>
+                <outlet property="tableView" destination="6vX-QN-aOc" id="Ywd-Sa-qxq"/>
+                <outlet property="view" destination="rEr-0n-89D" id="wxZ-c1-zte"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="rEr-0n-89D">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6vX-QN-aOc">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="520"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="dzc-4b-hju"/>
+                        <outlet property="delegate" destination="-1" id="Car-J5-0Sv"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HWE-TP-TwB">
+                    <rect key="frame" x="20" y="530" width="560" height="50"/>
+                    <color key="backgroundColor" red="0.55294117649999996" green="0.61176470589999998" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="SLz-GH-kWY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                    <state key="normal" title="PilotStatusTop">
+                        <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="pickUpAction:" destination="-1" eventType="touchDown" id="xYC-Dy-wiM"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="HWE-TP-TwB" firstAttribute="top" secondItem="6vX-QN-aOc" secondAttribute="bottom" constant="10" id="2cx-vh-Qdw"/>
+                <constraint firstAttribute="trailing" secondItem="6vX-QN-aOc" secondAttribute="trailing" id="4Vc-Cf-3AF"/>
+                <constraint firstAttribute="bottom" secondItem="HWE-TP-TwB" secondAttribute="bottom" constant="20" id="EyV-Vj-jOM"/>
+                <constraint firstItem="6vX-QN-aOc" firstAttribute="top" secondItem="rEr-0n-89D" secondAttribute="top" id="IUF-1r-Rx1"/>
+                <constraint firstAttribute="trailing" secondItem="HWE-TP-TwB" secondAttribute="trailing" constant="20" id="Lcf-a5-QNi"/>
+                <constraint firstItem="HWE-TP-TwB" firstAttribute="leading" secondItem="rEr-0n-89D" secondAttribute="leading" constant="20" id="ewz-df-T5V"/>
+                <constraint firstItem="6vX-QN-aOc" firstAttribute="leading" secondItem="rEr-0n-89D" secondAttribute="leading" id="u4K-oy-Wth"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

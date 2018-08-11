@@ -1,0 +1,491 @@
+//Generated IOS file for locale Base : vn
+
+"language"="vn";
+
+//APPLICATION_GLOBAL
+"app_name"="Dilver";
+"app_version"="1.0";
+
+//COMMON
+"common_cancel_button"="Cancel";
+"common_yes_button"="Yes";
+"common_continue_button"="Continue";
+"common_confirm_button"="Confirm";
+"common_ok"="OK";
+"common_search"="Search";
+"common_email"="Email";
+"common_password"="Password";
+
+//HOME_SCREEN
+"home_send_new_parcel_title"="Send a Package";
+"home_be_pilots_title"="Be Pilots";
+"home_current_location"="CURRENT LOCATION";
+"home_continue_title"="Continue";
+"home_search_title"="Search";
+"home_screen_title"="";
+"home_screen_description"="";
+"home_address_not_found"="Your address can’t be found. You can long press to point your location";
+"home_no_parcel_found"="No Parcel found";
+"home_get_parcel_detail_error"="Get parcel detail error\n Try again";
+"home_get_place_error"="Have problem with your network\n Try again";
+"home_turn_on_your_location"="To get parcels nearby your location\nPlease turn on your location service.";
+
+//LOGIN_SCREEN
+"login_screen_title"="";
+"login_screen_description"="";
+"login_screen_username_title"="";
+"login_screen_username_hint"="";
+"login_screen_password_title"="";
+"login_screen_password_hint"="";
+"login_intro_never_show_again"="Never Show Again";
+
+//SEND_A_PARCEL_SCREEN
+"send_a_parcel_screen_sender_mail_title"="Sender Email";
+"send_a_parcel_screen_info_sender_mail"="Add Sender Email";
+"send_a_parcel_screen_info_sender_phone"="Add Sender Phone";
+"send_a_parcel_screen_sender_phone_title"="Sender Phone";
+"send_a_parcel_screen_title"="Send a Parcel";
+"update_a_parcel_screen_title"="Update parcel";
+"send_a_parcel_screen_reciever_phone_title"="Reciever Phone";
+"send_a_parcel_screen_info_reciever_phone"="Add Reciever Phone";
+"send_a_parcel_screen_reciever_mail_title"="Reciever Email";
+"send_a_parcel_screen_info_reciever_mail"="Add Reciever Email";
+"send_a_parcel_screen_info_name"="Add Parcel Name";
+"send_a_parcel_screen_info_category"="Select Category";
+"send_a_parcel_screen_info_description"="Description";
+"send_a_parcel_screen_info_pickup_add"="Pick Up Address";
+"send_a_parcel_screen_info_delivery_add"="Add Address";
+"send_a_parcel_screen_info_sender_name"="Add Sender Name";
+"send_a_parcel_screen_info_reciever_name"="Add Reciever Name";
+"send_a_parcel_screen_info_transport"="Select TransPort";
+"send_a_parcel_screen_info_time"="Add Time";
+"send_a_parcel_screen_info_price"="Add Price";
+"send_a_parcel_screen_info_weight"="KG";
+"send_a_parcel_screen_name"="Parcel Name";
+"send_a_parcel_screen_category"="Category";
+"send_a_parcel_screen_description"="Description";
+"send_a_parcel_screen_weight"="Weight";
+"send_a_parcel_screen_pickup_add"="Pick Up Address";
+"send_a_parcel_screen_delivery_add"="Delivery Address";
+"send_a_parcel_screen_sender_name"="Sender Name";
+"send_a_parcel_screen_reciever_name"="Reciever Name";
+"send_a_parcel_screen_transport"="Prefered mode of transport";
+"send_a_parcel_screen_time"="Time";
+"send_a_parcel_screen_price"="My Max price";
+"send_a_parcel_screen_tap_upload_text"="Take or upload a picture";
+"send_a_parcel_first_name"="First Name";
+"send_a_parcel_last_name"="Last Name";
+"send_a_parcel_phone_number"="Phone Number";
+"send_a_parcel_email"="Email";
+"send_a_parcel_sender_placeholder_first_name"="Sender first name";
+"send_a_parcel_sender_placeholder_last_name"="Sender last name";
+"send_a_parcel_sender_placeholder_phone_number"="Write a sender phone";
+"send_a_parcel_sender_placeholder_email"="Write a sender email";
+"send_a_parcel_receiver_placeholder_first_name"="Receiver first name";
+"send_a_parcel_receiver_placeholder_last_name"="Receiver last name";
+"send_a_parcel_receiver_placeholder_phone_number"="Write a receiver phone";
+"send_a_parcel_receiver_placeholder_email"="Write a receiver email";
+"send_a_parcel_receiver_info_title"="Receiver Info";
+"send_a_parcel_sender_info_title"="Sender Info";
+"send_a_parcel_add_information"="Add information";
+
+//POPUP_CREATE_PARCEL_SUCCESS
+"popup_create_parcel_complete_screen_title"="Success";
+"popup_create_parcel_complete_screen_message"="Your order is submitted and pilotes offers will be send to you";
+"popup_create_parcel_complete_screen_message_faild"="Your order is submitted and pilotes offers faild, Please again";
+
+//UPLOAD_PICTURE_POPUP
+"popup_title"="Upload picture";
+"popup_take_new_photo_text"="Take New Photo";
+"popup_select_from_gallary_text"="Select From Gallery";
+
+//CONTINUE_BUTTON
+"continue_button_text"="Continue";
+
+//ADD_EMAIL_SCREEN
+"add_receiver_email_screen_title"="Receiver Email";
+"add_sender_email_screen_title"="Sender Email";
+"add_sender_email_screen_suggest"="Input Email for Sender";
+"add_receiver_email_screen_suggest"="Input Email for Receiver";
+
+//ADD_PHONE_SCREEN
+"add_sender_phone_screen_title"="Sender Phone";
+"add_sender_phone_screen_suggest"="Input Phone for Sender";
+"add_receiver_phone_screen_title"="Receiver Phone";
+"add_receiver_phone_screen_suggest"="Input Phone for Receiver";
+
+//ADD_TIME_SCREEN
+"add_time_now_return"="As soon as possible";
+"add_time_screen_title"="Add Time";
+"add_time_now_text"="Now";
+"add_time_later_text"="Later";
+
+//ADD_MAX_PRICE_SCREEN
+"add_max_price_screen_title"="My Price";
+"add_max_price_screen_suggest"="Input max price for your parcel";
+"add_price_place_bid"="For a trip of %@ with a package of %@,  estimated price is %@";
+
+//ADD_WEIGHT_SCREEN
+"add_weight_screen_title"="Weight";
+"add_weight_screen_suggest"="Input weight for your parcel";
+
+//ACTION_SHEET
+"action_sheet_button_done_text"="Done";
+
+//ADD_DESCRIPTION_SCREEN
+"add_description_screen_title"="Description";
+"add_description_screen_suggest"="Write a description for your parcel";
+
+//ADD_PARCEL_NAME_SCREEN
+"add_parcel_name_title"="Parcel Name";
+"add_parcel_name_suggest"="Write a name for your parcel";
+
+//ADD_PARCEL_RECEIVE_NAME_SCREEN
+"add_parcel_receive_name_screen_title"="Receiver Name";
+"add_parcel_receive_name_screen_suggest"="Write a sender name for your parcel";
+"add_parcel_receive_name_screen_history"="History";
+
+//ADD_PARCEL_SENDER_NAME_SCREEN
+"add_parcel_sender_name_screen_title"="Sender Name";
+"add_parcel_sender_name_screen_suggest"="Write a sender name for your parcel";
+"add_parcel_sender_name_screen_history"="History";
+
+//POPUP_ERROR_RECEIVE_NAME_SCREEN
+"popup_error_receive_name_screen_title"="Error";
+"popup_error_receive_name_screen_message"="Please input your missing information";
+"popup_error_receive_name_screen_ok_button_text"="OK";
+
+//POPUP_ERROR_REQUEST_FAILD
+"popup_error_request_faild_title"="Error";
+"popup_error_request_faild_message"="Please again! Server Faild";
+"popup_error_request_faild_confirm"="OK";
+
+//POPUP_PAYMENT_CONFIRM
+"popup_payment_confirm_title"="Confirm Payment";
+"popup_payment_confirm_message"="You are about to pay at Dliver";
+"popup_payment_confirm_amount"="Amount";
+"popup_payment_confirm_total"="Total";
+"popup_payment_confirm_to_be_paid"="To be paid with";
+"popup_payment_confirm_cart"="Card";
+"popup_payment_suggest_input_pin"="Enter your Dliver PIN";
+"popup_payment_confirm_pay"="Pay";
+
+//CHANGE_PIN_SCREEN
+"change_pin_screen_title"="Add Pin";
+
+//PAYMENT_SUCCESS_SCREEN
+"payment_success_screen_title"="Payment Successful";
+"payment_success_screen_thankyou"="THANK YOU!";
+"payment_success_screen_notifi"="Dliver has been notified of your payment";
+"payment_success_screen_done"="Done";
+
+//POPUP_ERROR_SENDER_NAME_SCREEN
+"popup_error_sender_name_screen_title"="Error";
+"popup_error_sender_name_screen_message"="Please input your missing information";
+"popup_error_sender_name_screen_ok_button_text"="OK";
+
+//POPUP_ERROR_SENDER_EMAIL_SCREEN
+"popup_error_sender_email_incorrect_format"="Your entered email format is incorrect";
+
+//POPUP_ERROR_SENDER_PHONE_SCREEN
+"popup_error_sender_phone_incorrect_format"="Your entered phone number is incorrect";
+
+//MENU_SCREEN
+"menu_send_new_parcel"="Send New Parcel";
+"menu_pick_up_parcel"="Pick up Parcel";
+"menu_dashboard"="Dashboard";
+"menu_notifications"="Notifications";
+"menu_settings"="Settings";
+"menu_log_out"="Log out";
+"menu_warning_logout_message"="Do you want to log out?";
+
+//PICKUP_ADDRESS_SCREEN
+"pickup_address_nearby_place_header"="Nearby places";
+"pickup_address_history_header"="History";
+"pickup_address_additional_info"="Input more information";
+"pickup_address_choose_address_message"="Please choose your address";
+"pickup_address_additional_title"="Additional Details";
+"pickup_address_guideline"="Type in the address or place the pin to select address";
+
+//DASHBOARD_SCREEN
+"dashboard_awaiting_offer"="Awaiting Offer";
+"dashboard_title"="Dashboard";
+"dashboard_accepted_offer"="Accepted Offer";
+"dashboard_await_pickup"="Awaiting Pick Up";
+"dashboard_delivered"="Delivered";
+"dashboard_picked_up"="Picked Up";
+"dashboard_parcel_denied"="Denied";
+"dashboard_pull_to_refresh"="Pull to refresh";
+
+//POPUP_ERROR_CREATE_PARCEL
+"sender_missing_information"="Please input your missing information";
+
+//TIME_DIALOG
+"time_dialog_subtitle"="You can arrange to have a package collected up to 14 days ahead";
+
+//DASHBOARD_DETAIL
+"dashboard_show_information"="Show Information";
+"dashboard_hide_information"="Hide Information";
+"dashboard_view_picture"="View Picture";
+"dashboard_category"="CATEGORY";
+"dashboard_pickup_address"="PICK UP ADDRESS";
+"dashboard_receiver_name"="RECEIVER NAME";
+"dashboard_deliver_address"="DELIVER ADDRESS";
+"dashboard_time"="TIME";
+"dashboard_weight"="WEIGHT";
+"dashboard_distance"="DISTANCE";
+"dashboard_price"="PRICE";
+"dashboard_vehicle"="VEHICLE";
+"dashboard_accept"="Accept";
+"dashboard_cancel"="Cancel";
+"dashboard_see_more_information"="See more information";
+"dashboard_pop_up_cancel_deal"="Do you want to cancel this deal?\nYour parcel will need another Offer";
+"dashboard_no_data"="No data in this section";
+"dashboard_sender_name"="SENDER NAME";
+"dashboard_sender_phone"="SENDER PHONE";
+"dashboard_receiver_phone"="RECEIVER PHONE";
+
+//DASHBOARD_PILOT_SCREEN
+
+"a_waiting_pick_up_screen_button_title"="Pick up ?";
+"proceed_deal_faild"="Server error, Please try again!";
+"payment_success"="Success";
+"picker_up_screen"="Delivered ?";
+"accepted_offer_screen"="Proceed Deal";
+"dashboard_awaiting_accept_offer"="Awaiting Accept Offer";
+
+//PROFILE_USER_SCREEN
+"profile_user_picture"="Profile picture";
+"profile_screen_title"="User's Profile";
+"profile_first_name"="First Name";
+"profile_your_rating"="Your Rating";
+"profile_last_name"="Last Name";
+"profile_address"="Address";
+"profile_city"="City";
+"profile_phone_number"="Phone Number";
+"profile_country"="Country";
+"profile_email"="Email";
+"profile_as_sender"="As Sender";
+"profile_as_pilot"="As Pilot";
+
+//BID_PARCEL_SCREEN
+"bid_parcel_bid_to_deliver"="Bid to Dliver";
+"bid_parcel_confirm_title"="Your Offer is submitted and Sender will review your Offer";
+
+//SETTING_SCREEN
+"setting_account_information"="Account Information";
+"setting_username"="User Name";
+"setting_password"="Password";
+"setting_change_password"="Change password?";
+"setting_general_information"="General Information";
+"setting_add_creadit_card"="Add Credit Card";
+"setting_save"="Save";
+"setting_cancel"="Cancel";
+"setting_screen_title"="Setting";
+"setting_zip_code"="Zip Code";
+"setting_change_pin_button"="Change Pin";
+"setting_add_pin_button"="Add pin to easily approve your credit card";
+"setting_remove_credit_confirm"="Do you want to delete this card?";
+"setting_alert_missing_information"="Please input the missing information";
+"setting_add_pin_title"="Add PIN";
+"setting_credit_card_information"="Credit Card Information";
+"setting_update_success"="Update Success!";
+"setting_try_again"="There is a problem with our service. Please try again!";
+
+//PLACE_BID_PARCEL_SCREEN
+"place_bid_my_price"="My Price";
+"place_bid_parcel_name"="PARCEL NAME";
+"place_bid_pickup_time"="Estimated Pickup time";
+"place_bid_delivery_time"="Estimated Delivery time";
+"place_bid_title"="Place Bid";
+
+//POPUP_UPDATE_PILOT_STATUS
+"change_status_to_delivered"="Do you want update status of this Parcel to Delivered ?";
+"accepted_offer_yes"=" Yes";
+"confirm_to_awaiting_pickup_to_picked_up"="Do you want to change status of this Parcel to Picked?";
+"accepted_offer_no_thanks"="No, Thanks";
+"accepted_offer_later"=" Later";
+"popup_accepted_offer_title"="Do you want to proceed with this parcel?  Your credit card will be deducted";
+"credit_cart_add_title"="Add credit card";
+"credit_cart_user_not_input"="You need to have Credit Card information to proceed, bid";
+"credit_card_close_button"="Close";
+"check_infomation_missing_card_mail_phone"="You need to add Credit Card (Email/Phone number) information in your Settings";
+
+//CHANGE_PASS_SCREEN
+"change_pass_screen_title"="Change Password";
+"current_pass_word_suggest"="Current Password";
+"new_pass_word_suggest"="New Password";
+"confirm_pass_word_suggest"="Confirm Password";
+"change_password_screen_button_change_title"="Change";
+"change_password_screen_button_forget_pass_title"="Forgot password?";
+"change_password_email_not_exist"="Your entered email is not existed!";
+"change_password_screen_complete"="Your new password is send to your email!";
+
+//CHANGE_PIN_POPUP
+"change_pin_title"="Change PIN";
+"change_pin_popup_pin"="Password";
+"change_pin_popup_new_pin"="New pin";
+"change_pin_confirm_pin"="Confirm pin";
+"change_pin_popup_new_forgot"="Forget?";
+"change_pin_popup_confirm"="Change Pin";
+"awaiting_offer_show_confirm_delete"="Do you want to delete this Parcel?";
+"change_pin_popup_forgot"="Forgot?";
+"change_pin_popup_wrong_info"="Your entered information is incorrect";
+"change_pin_popup_wrong_pass_word"="Please enter your pass word";
+"change_pin_popup_wrong_pin"="Pin is incorrect format";
+"add_pin_popup_incorrect_pin"="Your entered PIN is incorrect";
+"add_pin_description"="Add PIN code to easily approve your payment and protect your card against unauthorized use";
+"forgot_password_title"="FORGOT YOUR PASSWORD";
+"forgot_password_input_hint"="Input your Email Address";
+"forgot_password_change_button_title"="Send new password";
+
+//SERVER_MESSAGE
+"server_fb_account_exist_msg"="Facebook account already exists";
+"server_create_account_success_msg"="Your account is created, you need to access to your email to active your account";
+"server_create_account_failed_msg"="Account has been created failed";
+"server_rating_success_msg"="Rating successfully";
+"server_change_password_success_msg"="Password has been updated successfully";
+"server_change_pin_success_msg"="PIN has been updated successfully";
+"server_data_invalid_msg"="Data is invalid";
+"server_invalid_user_token_msg"="Your session has expired!";
+"server_not_found_user_token_msg"="Your session has expired!";
+"server_request_success_msg"="Request successfully And new password sent to your email";
+"server_unknown_email_msg"="Email does not exist";
+"server_user_not_exist_msg"="User account does not exist";
+"server_user_not_active_msg"="Account has not been activated";
+"server_login_success_msg"="Login successfully";
+"server_incorrect_password_msg"="Password is incorrect";
+"server_user_pin_exist_msg"="PIN already exists";
+"server_set_pin_success_msg"="PIN has been set successfully";
+"server_incorrect_pin_msg"="PIN is incorrect";
+"server_logout_success_msg"="Logout successfully";
+"server_exist_email_msg"="Email already exists";
+"server_register_success_msg"="Account has been created successfully";
+"server_wrong_password_format_msg"="Password format is incorrect";
+"server_wrong_first_name_format_msg"="First name format is incorrect";
+"server_wrong_last_name_format_msg"="Last name format is incorrect";
+"server_get_account_detail_success_msg"="Account detail is retrieved successfully";
+"server_update_account_success_msg"="Account detail has been updated successfully";
+"server_get_transport_types_success_msg"="Transport types are retrieved successfully";
+"server_get_categories_success_msg"="Categories are retrieved successfully";
+"server_parcel_not_exist_msg"="Parcel does not exist";
+"server_pilot_not_exist_msg"="Pilot does not exist";
+"server_sender_not_exist_msg"="Sender does not exist";
+"server_rating_failed_msg"="Rating unsuccessfully";
+"server_already_rated_msg"="Already rated";
+"server_get_parcel_success_msg"="Parcels have been loaded successfully";
+"server_get_parcel_detail_success_msg"="Parcel detail has been loaded successfully";
+"server_can_not_delete_offer_msg"="Offer can not be deleted";
+"server_create_parcel_success_msg"="Parcel has been created successfully";
+"server_update_parcel_success_msg"="Parcel has been updated successfully";
+"server_parcel_type_not_exist_msg"="Parcel type does not exist";
+"server_transport_type_not_exist_msg"="Transport type does not exist";
+"server_get_offer_success_msg"="Offers have been loaded successfully";
+"server_create_offer_success_msg"="Offer has been created successfully";
+"server_accept_offer_success_msg"="Offer has been accepted";
+"server_get_offer_detail_success_msg"="Offer detail has been loaded successfully";
+"server_update_offer_status_success_msg"="Offer status has been updated successfully";
+"server_status_not_exist_msg"="Status does not exist";
+"server_status_incorrect_msg"="Status is incorrect";
+"server_offer_not_exist_msg"="Offer does not exist";
+"server_offer_already_exist_msg"="Offer already exist";
+"server_create_payment_success_msg"="Payment has been created successfully";
+"server_create_payment_failed_msg"="Payment has been created failed";
+"server_delete_credit_card_failed_msg"="Credit card failed to delete";
+"server_delete_credit_card_success_msg"="Credit card has been deleted successfully";
+"server_get_credit_card_detail_failed_msg"="Credit card detail failed to load";
+"server_get_credit_card_detail_success_msg"="Credit card detail has been loaded successfully";
+"server_update_credit_card_failed_msg"="Credit card failed to update";
+"server_update_credit_card_success_msg"="Credit card has been updated successfully";
+"server_create_credit_card_failed_msg"="Credit card failed to create";
+"server_create_credit_card_success_msg"="Credit card has been created successfully";
+"server_offer_accept_failed_msg"="Offer failed to accept";
+"server_offer_not_allowed_to_accept_msg"="Offer is not allowed to accept";
+"server_offer_create_failed_msg"="The Parcel is not available";
+"server_delete_offer_success_msg"="Offer has been deleted successfully";
+"server_delete_offer_failed_msg"="Offer has been deleted failed";
+"server_cancel_deal_offer_success_msg"="Offer has been canceled successfully";
+"server_upload_failed_msg"="Upload failed";
+"server_create_payment_failure_wrong_pin"="Pin is incorrect";
+
+//WELLCOME_SCREEN
+"wellcome_screen_sign_in"="Sign in";
+"wellcome_screen_sign_up"="Sign up";
+
+//DISCLAIMER_SCREEN
+"disclaimer_screen_title"="Terms and Conditions";
+"disclaimer_screen_button_agree"="I ARGEE";
+
+//SIGN_UP_SCREEN
+"signup_sign_up"="SIGN UP";
+"signup_sign_in"="SIGN IN";
+"signup_first_name"="First name";
+"signup_last_name"="Last name";
+"signup_email"="Email";
+"signup_mobile"="Mobile number";
+"signup_country"="Country";
+"signup_zip_code"="Zip Code";
+"signup_city"="City";
+"signup_password"="Create Password";
+"signup_confirm_password"="Confirm Password";
+"signup_address"="Address";
+"signup_password_not_match"="Your entered Create Password and Confirm Password are not same";
+"signup_email_existed"="Your inputted email is already used";
+"signup_success"="Your account is created, you need to access to your email to active your account";
+"signup_password_at_least_5_characters"="Your password need at least 5 characters";
+"signup_condition"="By joining you agree to the Dliver Terms of Use and Privacy Policy";
+"signup_dliver"="Dliver";
+"signup_terms"="Terms";
+"signup_of"="of";
+"signup_user"="Use";
+"signup_privacy"="Privacy";
+"signup_policy"="Policy";
+"signup_country_incorrect"="Country incorrect, Please insert another country";
+"sign_up_city_incorrect"="City incorrect, Please insert another country";
+"signup_sign_up_btn"="Sign up";
+
+//RATING_DIALOG
+"rating_enjoy_service"="ENJOYING THE SERVICES?";
+"rating_rating"="Rating";
+"rating_no_thanks"="No, Thanks";
+"rating_content"="If you enjoy working with %@, would you mind taking a moment to rate %@?";
+
+//FILTER_POPUP
+"filter_popup_title"="FILTER";
+"filter_popup_radius"="Radius";
+"filter_popup_length_trip"="Length of trip";
+"filter_popup_rating"="Rating";
+"filter_popup_min_radius"="5km";
+"filter_popup_max_radius"="50km";
+"filter_popup_min_trip"="1km";
+"filter_popup_max_trip"="500km";
+
+//NOTIFICATION_SCREEN
+"notification_screen_title"="Notification";
+"notification_delete"="Delete";
+"notification_cancel"="Cancel";
+
+//SIGNIN_SCREEN
+"signin_with_facebook"="Sign in with Facebook";
+"signin_with_email"="Sign in";
+"signin_text_or"="Or";
+"signin_text_forgot"="Forgot?";
+"signin_password_email_not_match"="The email and password you entered don’t match";
+
+//NOTIFICATION_MESSAGE
+"notification_sender_receive_offer"="You got an offer for parcel %@, Its status is now Awaiting Accepted Offer";
+"notification_sender_receive_accepted"="Your parcel %@ is accepted to deliver, its status is now Awaiting Pick up";
+"notification_sender_receive_denied"="Your parcel %@ is denied to deliver. Its status is now Awaiting Offer.";
+"notification_sender_parcel_to_pickup"="Your parcel %@ is picked up";
+"notification_sender_parcel_to_delivered"="Your parcel %@ is delivered";
+"notification_pilot_receive_accepted"="Your offer for parcel %@ is accepted. Its status is now Accepted Offer";
+"notification_pilot_receive_denied"="Your offer for parcel %@ is denied. Its status is now Denied";
+"notification_admin_assign_to_pilot"="You got parcel %@ from Admin";
+"notification_admin_assign_many_parcel_to_pilot"="You got parcel %@ from Admin";
+"notification_admin_quarantie_parcel"="Your parcel %@ got quarantined from Admin";
+"notification_admin_ban_account"="Your account got banned by Admin";
+"notification_sender_no_parcel_4_hour"="Your haven't any parcel for long time";
+"notification_user_doesnt_give_rating"="You haven't give Rating for your customer %@ yet";
+"notification_alert_message"="A status of parcel is now %@.";
+"notification_try_again"="Please try again!";
+

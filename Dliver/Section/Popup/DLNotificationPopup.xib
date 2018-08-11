@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DLNotificationPopup" customModule="DliverDev" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3XT-Z9-8gu">
+                    <rect key="frame" x="0.0" y="150" width="300" height="0.0"/>
+                    <color key="backgroundColor" red="0.55294117649999996" green="0.61176470589999998" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="j7O-l3-h5v"/>
+                    </constraints>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="continueButton2Clicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="k5d-jW-mLw"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8YN-M5-uou">
+                    <rect key="frame" x="0.0" y="150" width="300" height="50"/>
+                    <color key="backgroundColor" red="0.55294117649999996" green="0.61176470589999998" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Continue">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="common_continue_button"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="continueButtonClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="Jlc-U4-Tbl"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please input the missing information" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MyM-vM-zzt">
+                    <rect key="frame" x="20" y="0.0" width="260" height="150"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="sender_missing_information"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="8YN-M5-uou" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.25" id="1rp-io-n7R"/>
+                <constraint firstAttribute="trailing" secondItem="3XT-Z9-8gu" secondAttribute="trailing" id="3YR-7Z-r6V"/>
+                <constraint firstItem="3XT-Z9-8gu" firstAttribute="top" secondItem="MyM-vM-zzt" secondAttribute="bottom" id="BLw-wG-z4q"/>
+                <constraint firstAttribute="trailing" secondItem="MyM-vM-zzt" secondAttribute="trailing" constant="20" id="DeR-ah-dYD"/>
+                <constraint firstItem="MyM-vM-zzt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Iba-gv-xnM"/>
+                <constraint firstItem="8YN-M5-uou" firstAttribute="top" secondItem="3XT-Z9-8gu" secondAttribute="bottom" id="Zjw-Bw-nod"/>
+                <constraint firstItem="8YN-M5-uou" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dCX-lW-KoJ"/>
+                <constraint firstAttribute="bottom" secondItem="8YN-M5-uou" secondAttribute="bottom" id="jp1-uS-upL"/>
+                <constraint firstAttribute="trailing" secondItem="8YN-M5-uou" secondAttribute="trailing" id="m5b-3U-nwt"/>
+                <constraint firstItem="3XT-Z9-8gu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="nKX-Si-vE5"/>
+                <constraint firstItem="MyM-vM-zzt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="pj4-lV-UzQ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="confirmButton" destination="8YN-M5-uou" id="bJm-oY-waG"/>
+                <outlet property="confirmButton2" destination="3XT-Z9-8gu" id="1Rm-bu-DF4"/>
+                <outlet property="confirmButton2HeightCons" destination="j7O-l3-h5v" id="SjX-je-atd"/>
+                <outlet property="titleLabel" destination="MyM-vM-zzt" id="i1d-RD-Xrc"/>
+            </connections>
+            <point key="canvasLocation" x="233" y="260"/>
+        </view>
+    </objects>
+</document>

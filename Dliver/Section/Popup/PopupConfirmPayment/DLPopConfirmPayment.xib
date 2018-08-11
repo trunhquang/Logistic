@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DLPopConfirmPayment" customModule="DliverDev" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="360"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qIO-o0-m8u">
+                    <rect key="frame" x="0.0" y="310" width="300" height="50"/>
+                    <color key="backgroundColor" red="0.55294117649999996" green="0.61568627450000002" blue="0.98431372549999996" alpha="0.99420988480000005" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="c5B-Mu-h8x"/>
+                    </constraints>
+                    <state key="normal" title="Pay">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="popup_payment_confirm_pay"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="payAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="2le-NY-0Aj"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FQo-ni-07o" userLabel="line1">
+                    <rect key="frame" x="20" y="60" width="260" height="1"/>
+                    <color key="backgroundColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="Bnb-1o-0IF"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E5l-ux-s3m" userLabel="line3">
+                    <rect key="frame" x="60" y="282" width="180" height="1"/>
+                    <color key="backgroundColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="3Uf-Q4-5Rz"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zgU-NM-8lz" userLabel="line2">
+                    <rect key="frame" x="20" y="136" width="260" height="1"/>
+                    <color key="backgroundColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="0mw-fc-uFi"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w55-Il-aIR">
+                    <rect key="frame" x="253" y="0.0" width="47" height="41"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="47" id="fWW-ic-06C"/>
+                        <constraint firstAttribute="height" constant="41" id="xIm-tp-IIk"/>
+                    </constraints>
+                    <connections>
+                        <action selector="cancelAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="yDp-a5-GfG"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dashboard_cancel" translatesAutoresizingMaskIntoConstraints="NO" id="qof-YA-03O">
+                    <rect key="frame" x="270" y="10" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="So2-1M-v7M"/>
+                        <constraint firstAttribute="width" constant="20" id="ziP-Ph-fhp"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm Payment" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2fM-0C-wAx">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="60"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="popup_payment_confirm_title"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are about to pay at Dliver" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r76-wY-aw7">
+                    <rect key="frame" x="58" y="76" width="185" height="17"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="popup_payment_confirm_message"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVC-VD-b0S">
+                    <rect key="frame" x="268" y="114" width="12" height="17"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUh-n7-9cJ">
+                    <rect key="frame" x="20" y="142" width="30" height="17"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="popup_payment_confirm_total"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D5q-M8-wU0">
+                    <rect key="frame" x="268" y="142" width="12" height="17"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To be paid with" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h9O-gu-dXT">
+                    <rect key="frame" x="20" y="179" width="96" height="17"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="popup_payment_confirm_to_be_paid"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qp1-m7-Yom">
+                    <rect key="frame" x="268" y="216" width="12" height="17"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cart 3037" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hG3-J6-9gg">
+                    <rect key="frame" x="20" y="216" width="62" height="17"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Dliver PIN" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nfT-n4-Ijf">
+                    <rect key="frame" x="60" y="252" width="180" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="5yW-E6-KOB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="placeholderLocalizeKey" value="popup_payment_suggest_input_pin"/>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blQ-jQ-eTm">
+                    <rect key="frame" x="20" y="114" width="50" height="17"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="popup_payment_confirm_amount"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87y-Xz-0qi">
+                    <rect key="frame" x="245" y="265" width="42" height="26"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                    <state key="normal" title="Forgot?">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="signin_text_forgot"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="fotgotAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="DUo-zX-e8s"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="zgU-NM-8lz" firstAttribute="top" secondItem="blQ-jQ-eTm" secondAttribute="bottom" constant="5" id="342-cV-oJ7"/>
+                <constraint firstItem="zgU-NM-8lz" firstAttribute="top" secondItem="FQo-ni-07o" secondAttribute="bottom" constant="75" id="9QN-br-gqE"/>
+                <constraint firstItem="Qp1-m7-Yom" firstAttribute="trailing" secondItem="D5q-M8-wU0" secondAttribute="trailing" id="9xs-lh-Vsj"/>
+                <constraint firstItem="sUh-n7-9cJ" firstAttribute="leading" secondItem="zgU-NM-8lz" secondAttribute="leading" id="AKi-Aj-8pH"/>
+                <constraint firstItem="E5l-ux-s3m" firstAttribute="top" secondItem="nfT-n4-Ijf" secondAttribute="bottom" id="Agd-fB-FrP"/>
+                <constraint firstItem="w55-Il-aIR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="C1Q-fN-03P"/>
+                <constraint firstItem="Qp1-m7-Yom" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hG3-J6-9gg" secondAttribute="trailing" constant="10" id="CDb-Iw-j07"/>
+                <constraint firstItem="AVC-VD-b0S" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="blQ-jQ-eTm" secondAttribute="trailing" constant="10" id="CZO-GW-6wP"/>
+                <constraint firstItem="D5q-M8-wU0" firstAttribute="centerY" secondItem="sUh-n7-9cJ" secondAttribute="centerY" id="DEQ-1b-gDc"/>
+                <constraint firstItem="zgU-NM-8lz" firstAttribute="leading" secondItem="FQo-ni-07o" secondAttribute="leading" id="Djy-YT-7sn"/>
+                <constraint firstItem="qof-YA-03O" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="GU7-8e-Pgp"/>
+                <constraint firstItem="zgU-NM-8lz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="Ht8-N7-PeE"/>
+                <constraint firstAttribute="trailing" secondItem="FQo-ni-07o" secondAttribute="trailing" constant="20" id="J2g-h1-QFi"/>
+                <constraint firstItem="87y-Xz-0qi" firstAttribute="centerY" secondItem="E5l-ux-s3m" secondAttribute="centerY" constant="-5" id="MXP-dG-WH7"/>
+                <constraint firstItem="D5q-M8-wU0" firstAttribute="trailing" secondItem="zgU-NM-8lz" secondAttribute="trailing" id="Nlm-Iq-8dF"/>
+                <constraint firstItem="hG3-J6-9gg" firstAttribute="leading" secondItem="h9O-gu-dXT" secondAttribute="leading" id="NtI-H6-4Ug"/>
+                <constraint firstItem="blQ-jQ-eTm" firstAttribute="leading" secondItem="zgU-NM-8lz" secondAttribute="leading" id="ShF-My-au6"/>
+                <constraint firstItem="h9O-gu-dXT" firstAttribute="top" secondItem="sUh-n7-9cJ" secondAttribute="bottom" constant="20" id="TfE-o5-YXX"/>
+                <constraint firstItem="AVC-VD-b0S" firstAttribute="trailing" secondItem="zgU-NM-8lz" secondAttribute="trailing" id="TnS-YO-1GZ"/>
+                <constraint firstItem="h9O-gu-dXT" firstAttribute="leading" secondItem="sUh-n7-9cJ" secondAttribute="leading" id="U0z-Tn-zux"/>
+                <constraint firstAttribute="trailing" secondItem="zgU-NM-8lz" secondAttribute="trailing" constant="20" id="UIH-sy-c0w"/>
+                <constraint firstItem="r76-wY-aw7" firstAttribute="centerX" secondItem="2fM-0C-wAx" secondAttribute="centerX" id="Vse-Cb-3jw"/>
+                <constraint firstItem="87y-Xz-0qi" firstAttribute="leading" secondItem="nfT-n4-Ijf" secondAttribute="trailing" constant="5" id="Xzj-Iy-Ulo"/>
+                <constraint firstItem="FQo-ni-07o" firstAttribute="top" secondItem="2fM-0C-wAx" secondAttribute="bottom" id="bCF-7P-yyI"/>
+                <constraint firstAttribute="trailing" secondItem="w55-Il-aIR" secondAttribute="trailing" id="bOI-e2-Jyo"/>
+                <constraint firstAttribute="trailing" secondItem="2fM-0C-wAx" secondAttribute="trailing" id="ce8-UI-obN"/>
+                <constraint firstItem="w55-Il-aIR" firstAttribute="leading" secondItem="2fM-0C-wAx" secondAttribute="trailing" id="d8p-57-Gau"/>
+                <constraint firstItem="E5l-ux-s3m" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="e5W-KG-3ju"/>
+                <constraint firstAttribute="trailing" secondItem="qof-YA-03O" secondAttribute="trailing" constant="10" id="e66-XX-lja"/>
+                <constraint firstItem="2fM-0C-wAx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="eOI-dr-30n"/>
+                <constraint firstItem="nfT-n4-Ijf" firstAttribute="leading" secondItem="E5l-ux-s3m" secondAttribute="trailing" id="f6U-bT-5cP"/>
+                <constraint firstItem="D5q-M8-wU0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="sUh-n7-9cJ" secondAttribute="trailing" constant="10" id="fGN-24-Kge"/>
+                <constraint firstItem="nfT-n4-Ijf" firstAttribute="centerX" secondItem="E5l-ux-s3m" secondAttribute="centerX" id="fjo-Yk-D6C"/>
+                <constraint firstItem="hG3-J6-9gg" firstAttribute="top" secondItem="h9O-gu-dXT" secondAttribute="bottom" constant="20" id="gNH-eu-Ufk"/>
+                <constraint firstAttribute="trailing" secondItem="E5l-ux-s3m" secondAttribute="trailing" constant="20" id="hYO-to-dHa"/>
+                <constraint firstItem="E5l-ux-s3m" firstAttribute="trailing" secondItem="FQo-ni-07o" secondAttribute="trailing" constant="-40" id="hgU-Ft-yH7"/>
+                <constraint firstItem="qIO-o0-m8u" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="iVs-Hx-9V3"/>
+                <constraint firstItem="sUh-n7-9cJ" firstAttribute="top" secondItem="zgU-NM-8lz" secondAttribute="bottom" constant="5" id="iZL-zD-n3c"/>
+                <constraint firstItem="FQo-ni-07o" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="jAy-aC-aBd"/>
+                <constraint firstItem="AVC-VD-b0S" firstAttribute="centerY" secondItem="blQ-jQ-eTm" secondAttribute="centerY" id="jaL-ES-TRe"/>
+                <constraint firstItem="Qp1-m7-Yom" firstAttribute="centerY" secondItem="hG3-J6-9gg" secondAttribute="centerY" id="n7j-cK-Iz4"/>
+                <constraint firstAttribute="trailing" secondItem="qIO-o0-m8u" secondAttribute="trailing" id="nax-U6-JpQ"/>
+                <constraint firstItem="nfT-n4-Ijf" firstAttribute="width" secondItem="E5l-ux-s3m" secondAttribute="width" id="qkZ-LI-eLE"/>
+                <constraint firstItem="r76-wY-aw7" firstAttribute="top" secondItem="FQo-ni-07o" secondAttribute="bottom" constant="15" id="qyc-RK-TEv"/>
+                <constraint firstItem="E5l-ux-s3m" firstAttribute="leading" secondItem="FQo-ni-07o" secondAttribute="leading" constant="40" id="sgl-Rg-2Wu"/>
+                <constraint firstItem="zgU-NM-8lz" firstAttribute="trailing" secondItem="FQo-ni-07o" secondAttribute="trailing" id="t47-ve-z7Q"/>
+                <constraint firstItem="FQo-ni-07o" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="60" id="tA2-WN-fIF"/>
+                <constraint firstItem="E5l-ux-s3m" firstAttribute="top" secondItem="zgU-NM-8lz" secondAttribute="bottom" constant="145" id="vKA-vp-eqE"/>
+                <constraint firstItem="2fM-0C-wAx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="y3p-gZ-acc"/>
+                <constraint firstAttribute="bottom" secondItem="qIO-o0-m8u" secondAttribute="bottom" id="z4W-n6-Nft"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Ht8-N7-PeE"/>
+                    <exclude reference="UIH-sy-c0w"/>
+                    <exclude reference="d8p-57-Gau"/>
+                    <exclude reference="f6U-bT-5cP"/>
+                    <exclude reference="e5W-KG-3ju"/>
+                    <exclude reference="hYO-to-dHa"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="balelTobePaidMarginTop" destination="TfE-o5-YXX" id="CSb-xI-j4n"/>
+                <outlet property="buttonPayContrainsHeight" destination="c5B-Mu-h8x" id="bK5-RO-W10"/>
+                <outlet property="confirmPaymentButton" destination="qIO-o0-m8u" id="JET-m9-T3v"/>
+                <outlet property="labelAmount" destination="AVC-VD-b0S" id="phh-gP-IP1"/>
+                <outlet property="labelAmountMarginBottom" destination="342-cV-oJ7" id="nIC-TU-u2h"/>
+                <outlet property="labelCartMarginTop" destination="gNH-eu-Ufk" id="45j-Nf-sMS"/>
+                <outlet property="labelCartNumber" destination="hG3-J6-9gg" id="ErL-Fm-TNx"/>
+                <outlet property="labelCartPrice" destination="Qp1-m7-Yom" id="ruf-KJ-uKr"/>
+                <outlet property="labelMessageMarginTop" destination="qyc-RK-TEv" id="dHM-Xf-Sh4"/>
+                <outlet property="labelTotal" destination="D5q-M8-wU0" id="int-XA-DPQ"/>
+                <outlet property="labelTotalMarginTop" destination="iZL-zD-n3c" id="n4C-fi-7B0"/>
+                <outlet property="line1MarginTop" destination="tA2-WN-fIF" id="4Yu-XC-J2Z"/>
+                <outlet property="line2MarginTop" destination="9QN-br-gqE" id="aRf-fV-hlj"/>
+                <outlet property="line3MarginTop" destination="vKA-vp-eqE" id="EbQ-GQ-spb"/>
+                <outlet property="textFieldEnterPin" destination="nfT-n4-Ijf" id="8Oj-Tl-W0R"/>
+            </connections>
+            <point key="canvasLocation" x="199" y="242"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="dashboard_cancel" width="16" height="16"/>
+    </resources>
+</document>

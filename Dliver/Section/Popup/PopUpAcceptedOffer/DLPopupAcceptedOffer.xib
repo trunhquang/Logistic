@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DLPopupAcceptedOffer" customModule="DliverDev" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="250"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vGy-Qk-S2w">
+                    <rect key="frame" x="0.0" y="149" width="300" height="50"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                    <state key="normal" title="No, Thanks">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="accepted_offer_no_thanks"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="noThanksClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="Bb5-4w-3Zp"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ky1-ZK-DOY">
+                    <rect key="frame" x="0.0" y="98" width="300" height="50"/>
+                    <color key="backgroundColor" red="0.55294117649999996" green="0.61176470589999998" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                    <state key="normal" title=" Yes">
+                        <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="accepted_offer_yes"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="confirmClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="9it-fg-jQH"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JpH-Jt-5Ps">
+                    <rect key="frame" x="0.0" y="148" width="300" height="1"/>
+                    <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="aUs-Mb-JEf"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you want to process this parcel?  Your parcel will be decucted $1" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPz-LI-i2T">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="98"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="dashboard_pop_up_cancel_deal"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CLf-vQ-n4M">
+                    <rect key="frame" x="0.0" y="199" width="300" height="1"/>
+                    <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="zY0-NQ-1qG"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DaZ-vy-GAI">
+                    <rect key="frame" x="0.0" y="200" width="300" height="50"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                    <state key="normal" title="Later">
+                        <color key="titleColor" red="0.72156862749999995" green="0.72156862749999995" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="accepted_offer_later"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="laterClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="GaM-zu-wNb"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Ky1-ZK-DOY" secondAttribute="trailing" id="0o9-QD-tNM"/>
+                <constraint firstAttribute="trailing" secondItem="vGy-Qk-S2w" secondAttribute="trailing" id="1Nf-F0-XLT"/>
+                <constraint firstItem="DaZ-vy-GAI" firstAttribute="top" secondItem="CLf-vQ-n4M" secondAttribute="bottom" id="3MR-Fw-vcL"/>
+                <constraint firstItem="DaZ-vy-GAI" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="1/5" id="48x-cT-TNQ"/>
+                <constraint firstAttribute="trailing" secondItem="JpH-Jt-5Ps" secondAttribute="trailing" id="6dN-XR-NUN"/>
+                <constraint firstItem="vGy-Qk-S2w" firstAttribute="top" secondItem="MPz-LI-i2T" secondAttribute="bottom" id="AAR-6c-bnT"/>
+                <constraint firstItem="Ky1-ZK-DOY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="JBo-sy-YcK"/>
+                <constraint firstItem="CLf-vQ-n4M" firstAttribute="top" secondItem="vGy-Qk-S2w" secondAttribute="bottom" id="NQj-uJ-3Ws"/>
+                <constraint firstItem="vGy-Qk-S2w" firstAttribute="height" secondItem="DaZ-vy-GAI" secondAttribute="height" id="QU0-n4-vZD"/>
+                <constraint firstItem="MPz-LI-i2T" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="VRe-TG-G8e"/>
+                <constraint firstItem="vGy-Qk-S2w" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="VWn-Br-1ZX"/>
+                <constraint firstItem="Ky1-ZK-DOY" firstAttribute="height" secondItem="vGy-Qk-S2w" secondAttribute="height" id="VtJ-2P-PLH"/>
+                <constraint firstItem="vGy-Qk-S2w" firstAttribute="top" secondItem="JpH-Jt-5Ps" secondAttribute="bottom" id="XSh-sR-89f"/>
+                <constraint firstAttribute="trailing" secondItem="MPz-LI-i2T" secondAttribute="trailing" id="ZD0-bK-S2a"/>
+                <constraint firstItem="CLf-vQ-n4M" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="aZx-mh-6Gh"/>
+                <constraint firstItem="Ky1-ZK-DOY" firstAttribute="top" secondItem="MPz-LI-i2T" secondAttribute="bottom" id="ctU-ZS-eau"/>
+                <constraint firstAttribute="trailing" secondItem="CLf-vQ-n4M" secondAttribute="trailing" id="enn-12-iwL"/>
+                <constraint firstItem="DaZ-vy-GAI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ghf-Kr-cFO"/>
+                <constraint firstItem="JpH-Jt-5Ps" firstAttribute="top" secondItem="Ky1-ZK-DOY" secondAttribute="bottom" id="lB4-2B-svk"/>
+                <constraint firstAttribute="trailing" secondItem="DaZ-vy-GAI" secondAttribute="trailing" id="o2E-a7-2yH"/>
+                <constraint firstItem="JpH-Jt-5Ps" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="qS1-Kl-CM7"/>
+                <constraint firstItem="MPz-LI-i2T" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="shQ-dP-6WP"/>
+                <constraint firstAttribute="bottom" secondItem="DaZ-vy-GAI" secondAttribute="bottom" id="vlc-Tb-Haw"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="AAR-6c-bnT"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="acceptedOfferButton" destination="Ky1-ZK-DOY" id="TZe-Rf-z2U"/>
+                <outlet property="titleLabel" destination="MPz-LI-i2T" id="R44-Yj-0su"/>
+            </connections>
+            <point key="canvasLocation" x="199" y="402"/>
+        </view>
+    </objects>
+</document>
