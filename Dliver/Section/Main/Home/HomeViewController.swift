@@ -184,25 +184,10 @@ class HomeViewController: UIViewController {
 //    keyboardHeight = frame.size.height
 //  }
 
-  private func sendingNewParcel () {
-//    let email = DLCache().getObject(forKey: UserDefault.Email) as! String
-//    let phone = DLCache().getObject(forKey: UserDefault.Phone) as! String
-//    if email.length == 0 || phone.length == 0 {
-//      self.showPopupNotify("check_infomation_missing_card_mail_phone")
-//      return
-//    }
-//    let sendParcelVC = DLSendNewParcelViewController.instantiateFromStoryboard(Storyboard.Sender)
-//    sendParcelVC.didSendParcelSuccessful = {
-//      (succes) in
-//      if succes && self.currentLocation != nil {
-//        self.mapsView.clear()
-//        let param = DLGetListParcelParams(radius: self.radiusFilter, distance: self.distanceFilter, rating: self.ratingFilter, latitude: String(format: "%f", self.currentLocation!.coordinate.latitude), longitude: String(format: "%f", self.currentLocation!.coordinate.longitude))
-//
-//        self.fetchParcels(param)
-//      }
-//    }
-//    self.navigationController?.pushViewController(sendParcelVC, animated: true)
-  }
+    private func sendingNewParcel () {
+        let vc = CreateNewParcelViewController.instantiateFromStoryboard(storyboardName: StoryboardName.Sender)
+        navigationController?.pushViewController(vc, animated: true)
+    }
 
   private func gotoDashboard() {
 //    let dashboardVC = DLDashboardViewController.instantiateFromStoryboard(Storyboard.Dashboard)
@@ -377,7 +362,7 @@ class HomeViewController: UIViewController {
 
 // MARK: - KYDrawerControllerDelegate
 extension HomeViewController: KYDrawerControllerDelegate {
-  func drawerController(drawerController: KYDrawerController, stateChanged state: KYDrawerController.DrawerState) {
+    func drawerController(_ drawerController: KYDrawerController, stateChanged state: KYDrawerController.DrawerState) {
 //    if state == .Closed {
 //      if let drawer = self.navigationController?.parentViewController as? KYDrawerController {
 //        drawer.mainViewController.view.alpha = 1.0
@@ -535,24 +520,23 @@ extension HomeViewController: KYDrawerControllerDelegate {
 //}
 
 // MARK: - DLMenuTableViewControllerDelegate
-
 extension HomeViewController: DLMenuTableViewControllerDelegate {
   func didChooseMenuAtIndex(index: NSInteger) {
-//    if drawer != nil {
-////      drawer?.setDrawerState(.Closed, animated: true)
-//    }
-//    switch index {
-//    case 0:
-//      sendingNewParcel()
-//    case 1:
-//      break
-//    case 2:
-//      gotoDashboard()
-//    case 3:
-//      gotoNotification()
-//    case 4:
-//      gotoSetting()
-//    case 5:
+    if drawer != nil {
+        drawer?.setDrawerState(.closed, animated: true)
+    }
+    switch index {
+    case 0:
+      sendingNewParcel()
+    case 1:
+      break
+    case 2:
+      gotoDashboard()
+    case 3:
+      gotoNotification()
+    case 4:
+      gotoSetting()
+    case 5:
 //      confirmmationPopup.didConfirmButtonClicked = {
 //        (_) in
 //        self.dismissPopupView()
@@ -580,9 +564,10 @@ extension HomeViewController: DLMenuTableViewControllerDelegate {
 //      }
 //      confirmmationPopup.titleLabel.text?.localize(withKey: "menu_warning_logout_message")
 //      presentPopupView(confirmmationPopup)
-//    default:
-//      print("Default")
-//    }
+        return
+    default:
+      print("Default")
+    }
   }
 }
 

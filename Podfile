@@ -14,4 +14,6 @@ target 'Dliver' do
     pod 'ObjectMapper'
     pod 'RealmSwift’
     pod 'SwiftyJSON'
+    pod 'MBProgressHUD', '~> 1.0.0'
+    pod 'Toast-Swift', :git => 'https://github.com/scalessec/Toast-Swift', :tag => '3.0.1'
 end

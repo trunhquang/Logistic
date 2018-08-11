@@ -67,6 +67,16 @@
 		0D6E714020F0A9DD00548010 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D6E713F20F0A9DD00548010 /* LaunchScreen.storyboard */; };
 		0D780BAF211571AB006C20B0 /* DLBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D780BAE211571AB006C20B0 /* DLBaseViewController.swift */; };
 		0D780BD3211E7F91006C20B0 /* CreateNewParcelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D780BD2211E7F91006C20B0 /* CreateNewParcelViewController.swift */; };
+		0D780BD5211E98C9006C20B0 /* CreateNewParcelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D780BD4211E98C9006C20B0 /* CreateNewParcelModel.swift */; };
+		0D780BE9211EA017006C20B0 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D780BE8211EA017006C20B0 /* UITableView.swift */; };
+		0D780BEF211ED6D2006C20B0 /* CreateParcelTypeTextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D780BEB211ED6D2006C20B0 /* CreateParcelTypeTextFieldTableViewCell.swift */; };
+		0D780BF0211ED6D2006C20B0 /* CreateParcelTypeTextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D780BEC211ED6D2006C20B0 /* CreateParcelTypeTextFieldTableViewCell.xib */; };
+		0D780BF1211ED6D2006C20B0 /* CreateParcelTypeTextViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D780BED211ED6D2006C20B0 /* CreateParcelTypeTextViewTableViewCell.swift */; };
+		0D780BF2211ED6D2006C20B0 /* CreateParcelTypeTextViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D780BEE211ED6D2006C20B0 /* CreateParcelTypeTextViewTableViewCell.xib */; };
+		0D780BF5211ED724006C20B0 /* CreateNewParceHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D780BF4211ED724006C20B0 /* CreateNewParceHeaderView.swift */; };
+		0D780BF7211ED733006C20B0 /* CreateNewParceHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D780BF6211ED733006C20B0 /* CreateNewParceHeaderView.xib */; };
+		0D780BF9211EE288006C20B0 /* CreateNewParcelFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D780BF8211EE288006C20B0 /* CreateNewParcelFooterView.swift */; };
+		0D780BFB211EE2D3006C20B0 /* CreateNewParcelFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D780BFA211EE2D3006C20B0 /* CreateNewParcelFooterView.xib */; };
 		0D7907FD20F0BF4600D0592B /* Contants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7907FC20F0BF4600D0592B /* Contants.swift */; };
 		0D7907FF20F0C02600D0592B /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7907FE20F0C02600D0592B /* Cache.swift */; };
 		0D79080120F0C38600D0592B /* Identify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D79080020F0C38600D0592B /* Identify.swift */; };
@@ -200,6 +210,16 @@
 		0D6E713F20F0A9DD00548010 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D780BAE211571AB006C20B0 /* DLBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DLBaseViewController.swift; sourceTree = "<group>"; };
 		0D780BD2211E7F91006C20B0 /* CreateNewParcelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewParcelViewController.swift; sourceTree = "<group>"; };
+		0D780BD4211E98C9006C20B0 /* CreateNewParcelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewParcelModel.swift; sourceTree = "<group>"; };
+		0D780BE8211EA017006C20B0 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		0D780BEB211ED6D2006C20B0 /* CreateParcelTypeTextFieldTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateParcelTypeTextFieldTableViewCell.swift; sourceTree = "<group>"; };
+		0D780BEC211ED6D2006C20B0 /* CreateParcelTypeTextFieldTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateParcelTypeTextFieldTableViewCell.xib; sourceTree = "<group>"; };
+		0D780BED211ED6D2006C20B0 /* CreateParcelTypeTextViewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateParcelTypeTextViewTableViewCell.swift; sourceTree = "<group>"; };
+		0D780BEE211ED6D2006C20B0 /* CreateParcelTypeTextViewTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateParcelTypeTextViewTableViewCell.xib; sourceTree = "<group>"; };
+		0D780BF4211ED724006C20B0 /* CreateNewParceHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewParceHeaderView.swift; sourceTree = "<group>"; };
+		0D780BF6211ED733006C20B0 /* CreateNewParceHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateNewParceHeaderView.xib; sourceTree = "<group>"; };
+		0D780BF8211EE288006C20B0 /* CreateNewParcelFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewParcelFooterView.swift; sourceTree = "<group>"; };
+		0D780BFA211EE2D3006C20B0 /* CreateNewParcelFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateNewParcelFooterView.xib; sourceTree = "<group>"; };
 		0D7907FC20F0BF4600D0592B /* Contants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contants.swift; sourceTree = "<group>"; };
 		0D7907FE20F0C02600D0592B /* Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 		0D79080020F0C38600D0592B /* Identify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identify.swift; sourceTree = "<group>"; };
@@ -451,6 +471,7 @@
 				0D79080D20F0CF6000D0592B /* UITextField.swift */,
 				0DADB03520F0D3F600E93D15 /* UIButton.swift */,
 				0D3A63BA2113513C000097E8 /* String.swift */,
+				0D780BE8211EA017006C20B0 /* UITableView.swift */,
 				0D3A63B82113505F000097E8 /* UIView.swift */,
 				0DADB03720F0D47500E93D15 /* UILabel.swift */,
 			);
@@ -585,6 +606,7 @@
 		0D780BD0211E7F5B006C20B0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0D780BD4211E98C9006C20B0 /* CreateNewParcelModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -592,8 +614,32 @@
 		0D780BD1211E7F5B006C20B0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0D780BF3211ED6F5006C20B0 /* HeaderFooter */,
+				0D780BEA211ED6D2006C20B0 /* Cell */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		0D780BEA211ED6D2006C20B0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0D780BEB211ED6D2006C20B0 /* CreateParcelTypeTextFieldTableViewCell.swift */,
+				0D780BEC211ED6D2006C20B0 /* CreateParcelTypeTextFieldTableViewCell.xib */,
+				0D780BED211ED6D2006C20B0 /* CreateParcelTypeTextViewTableViewCell.swift */,
+				0D780BEE211ED6D2006C20B0 /* CreateParcelTypeTextViewTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		0D780BF3211ED6F5006C20B0 /* HeaderFooter */ = {
+			isa = PBXGroup;
+			children = (
+				0D780BF4211ED724006C20B0 /* CreateNewParceHeaderView.swift */,
+				0D780BF6211ED733006C20B0 /* CreateNewParceHeaderView.xib */,
+				0D780BF8211EE288006C20B0 /* CreateNewParcelFooterView.swift */,
+				0D780BFA211EE2D3006C20B0 /* CreateNewParcelFooterView.xib */,
+			);
+			path = HeaderFooter;
 			sourceTree = "<group>";
 		};
 		0D79080420F0CE1C00D0592B /* Localizable */ = {
@@ -821,14 +867,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D780BF7211ED733006C20B0 /* CreateNewParceHeaderView.xib in Resources */,
 				0D3A63F42113521B000097E8 /* DLUploadPicturePopup.xib in Resources */,
 				0D3A64002113521B000097E8 /* DLPopupAcceptedOffer.xib in Resources */,
 				0D6E712920F09C7200548010 /* Login.storyboard in Resources */,
 				0D3A63F02113521B000097E8 /* DLNotificationPopup.xib in Resources */,
 				0D3A63E62113521B000097E8 /* DLAlertPopUp.xib in Resources */,
 				0D6E714020F0A9DD00548010 /* LaunchScreen.storyboard in Resources */,
+				0D780BFB211EE2D3006C20B0 /* CreateNewParcelFooterView.xib in Resources */,
 				0D3A63FA2113521B000097E8 /* DLNotifyMessagePopUp.xib in Resources */,
 				0D3A63EC2113521B000097E8 /* DLRatingDialog.xib in Resources */,
+				0D780BF0211ED6D2006C20B0 /* CreateParcelTypeTextFieldTableViewCell.xib in Resources */,
+				0D780BF2211ED6D2006C20B0 /* CreateParcelTypeTextViewTableViewCell.xib in Resources */,
 				0D6E712620F09C7200548010 /* Home.storyboard in Resources */,
 				0D3A63EE2113521B000097E8 /* DLConfirmationPopup.xib in Resources */,
 				0D6E713420F09CF500548010 /* Assets.xcassets in Resources */,
@@ -907,10 +957,12 @@
 				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/KYDrawerController/KYDrawerController.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -924,10 +976,12 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KYDrawerController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -941,14 +995,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D780BF9211EE288006C20B0 /* CreateNewParcelFooterView.swift in Sources */,
 				0DBD062120F9D3DE00D31F4F /* BlockPan.swift in Sources */,
 				0DBD064420F9D3DE00D31F4F /* UIImageViewExtensions.swift in Sources */,
 				0DBD064920F9D3DE00D31F4F /* UITextFieldExtensions.swift in Sources */,
 				0D3A63F52113521B000097E8 /* DLFilterDashBoardPopup.swift in Sources */,
 				0D8FC335210F42910022338B /* DLMenuHeaderView.swift in Sources */,
+				0D780BD5211E98C9006C20B0 /* CreateNewParcelModel.swift in Sources */,
 				0DBD063320F9D3DE00D31F4F /* FloatingPointExtensions.swift in Sources */,
 				0D3A63EF2113521B000097E8 /* DLNotificationPopup.swift in Sources */,
 				0D0299DA21046527009140CA /* BackBarButton.swift in Sources */,
+				0D780BF1211ED6D2006C20B0 /* CreateParcelTypeTextViewTableViewCell.swift in Sources */,
 				0DBD062820F9D3DE00D31F4F /* CGFloatExtensions.swift in Sources */,
 				0D3A64032113521B000097E8 /* DLBidPopupView.swift in Sources */,
 				0DBD063A20F9D3DE00D31F4F /* UIAlertControllerExtensions.swift in Sources */,
@@ -989,6 +1046,7 @@
 				0D79080320F0C82A00D0592B /* AppIcons.swift in Sources */,
 				0D5F3A91211559B2006DA9ED /* DLPilotWaitingAcceptOfferViewController.swift in Sources */,
 				0D3A63E92113521B000097E8 /* DLPopupChangPin.swift in Sources */,
+				0D780BEF211ED6D2006C20B0 /* CreateParcelTypeTextFieldTableViewCell.swift in Sources */,
 				0D3A63B721134A7D000097E8 /* Temp.swift in Sources */,
 				0D3A63FD2113521B000097E8 /* DLNotifyParcelPopUp.swift in Sources */,
 				0DBD064C20F9D3DE00D31F4F /* UIViewControllerExtensions.swift in Sources */,
@@ -1000,7 +1058,9 @@
 				0DBD064520F9D3DE00D31F4F /* UILabelExtensions.swift in Sources */,
 				0D5F3A8F211559B2006DA9ED /* DLPilotViewController.swift in Sources */,
 				0DBD063E20F9D3DE00D31F4F /* UIColoredView.swift in Sources */,
+				0D780BF5211ED724006C20B0 /* CreateNewParceHeaderView.swift in Sources */,
 				0D3A63F32113521B000097E8 /* DLUploadPicturePopup.swift in Sources */,
+				0D780BE9211EA017006C20B0 /* UITableView.swift in Sources */,
 				0D5F3A8E211559B2006DA9ED /* DLPilotPickedUpViewController.swift in Sources */,
 				0D8FC337210F42910022338B /* DLMenuTableViewController.swift in Sources */,
 				0D6BD40E20F0BC0800C78682 /* UserDefaultKey.swift in Sources */,

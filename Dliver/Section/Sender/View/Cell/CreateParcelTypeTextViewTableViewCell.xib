@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="109" id="KGk-i7-Jjw" customClass="CreateParcelTypeTextViewTableViewCell" customModule="Dliver" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="363" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="363" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uhT-na-Ajj" userLabel="Address">
+                        <rect key="frame" x="10" y="0.0" width="343" height="60"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Địa chỉ giao hàng" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="u28-5G-56r">
+                                <rect key="frame" x="30" y="0.0" width="313" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_Home_White" translatesAutoresizingMaskIntoConstraints="NO" id="VjZ-d1-4Hf">
+                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.91764705879999997" green="0.2156862745" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="8fN-qm-rNG"/>
+                                    <constraint firstAttribute="height" constant="30" id="zVI-mL-kwc"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="u28-5G-56r" secondAttribute="bottom" id="DKb-TK-bxq"/>
+                            <constraint firstItem="u28-5G-56r" firstAttribute="leading" secondItem="VjZ-d1-4Hf" secondAttribute="trailing" id="DMI-FP-wtx"/>
+                            <constraint firstItem="u28-5G-56r" firstAttribute="top" secondItem="uhT-na-Ajj" secondAttribute="top" id="GkG-4Y-GSg"/>
+                            <constraint firstAttribute="trailing" secondItem="u28-5G-56r" secondAttribute="trailing" id="JDx-zF-u5J"/>
+                            <constraint firstItem="VjZ-d1-4Hf" firstAttribute="leading" secondItem="uhT-na-Ajj" secondAttribute="leading" id="UMk-fL-opB"/>
+                            <constraint firstItem="VjZ-d1-4Hf" firstAttribute="top" secondItem="uhT-na-Ajj" secondAttribute="top" id="bd1-hG-rsb"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="uhT-na-Ajj" secondAttribute="trailing" constant="10" id="5uo-dd-ilj"/>
+                    <constraint firstItem="uhT-na-Ajj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="DaC-cr-7QE"/>
+                    <constraint firstAttribute="bottom" secondItem="uhT-na-Ajj" secondAttribute="bottom" constant="9.5" id="GmB-3T-Dtb"/>
+                    <constraint firstItem="uhT-na-Ajj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="eu9-5m-eqM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="icon" destination="VjZ-d1-4Hf" id="bGy-RS-zog"/>
+                <outlet property="textView" destination="u28-5G-56r" id="aJd-e9-p0O"/>
+            </connections>
+            <point key="canvasLocation" x="55.5" y="73.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_Home_White" width="21" height="21"/>
+    </resources>
+</document>

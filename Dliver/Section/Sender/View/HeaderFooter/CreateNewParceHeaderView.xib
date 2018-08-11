@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CreateNewParceHeaderView" customModule="Dliver" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sender_camera_gray" translatesAutoresizingMaskIntoConstraints="NO" id="MHC-ru-hT7">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPd-QS-h1M">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <connections>
+                        <action selector="captureImageAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="uOL-D1-5Ow"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="aPd-QS-h1M" secondAttribute="bottom" id="N2Z-eX-9E1"/>
+                <constraint firstAttribute="bottom" secondItem="MHC-ru-hT7" secondAttribute="bottom" id="RZg-kB-8cG"/>
+                <constraint firstItem="aPd-QS-h1M" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="cEo-XK-dA8"/>
+                <constraint firstItem="MHC-ru-hT7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hOk-X9-6fh"/>
+                <constraint firstAttribute="trailing" secondItem="MHC-ru-hT7" secondAttribute="trailing" id="jmT-MJ-lTF"/>
+                <constraint firstItem="MHC-ru-hT7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="pfp-81-v2k"/>
+                <constraint firstItem="aPd-QS-h1M" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="rLB-qT-4An"/>
+                <constraint firstAttribute="trailing" secondItem="aPd-QS-h1M" secondAttribute="trailing" id="tHP-Ye-gh4"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="sender_camera_gray" width="52" height="40"/>
+    </resources>
+</document>

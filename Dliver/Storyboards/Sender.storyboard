@@ -22,7 +22,7 @@
         <!--Create New Parcel View Controller-->
         <scene sceneID="tiM-JK-0ch">
             <objects>
-                <viewController storyboardIdentifier="DLSendNewParcelViewController" id="iU9-ka-M4N" customClass="CreateNewParcelViewController" customModule="Dliver" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreateNewParcelViewController" id="iU9-ka-M4N" customClass="CreateNewParcelViewController" customModule="Dliver" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="K8N-0h-fr8"/>
                         <viewControllerLayoutGuide type="bottom" id="3LA-8R-87E"/>
@@ -31,72 +31,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SQC-lk-KRF">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fgq-4z-6um">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vND-Va-g35">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sender_camera_gray" translatesAutoresizingMaskIntoConstraints="NO" id="wSB-xb-SqY">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
-                                            </imageView>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KbK-qP-8dO" userLabel="ContentVIew">
-                                                <rect key="frame" x="0.0" y="40" width="375" height="300"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="300" id="UKX-fe-f8a"/>
-                                                </constraints>
-                                            </view>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UF0-H1-YXl">
-                                                <rect key="frame" x="20" y="350" width="335" height="50"/>
-                                                <color key="backgroundColor" red="0.55294117649999996" green="0.61176470589999998" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="E2F-Uk-r8y"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
-                                                <state key="normal" title="Tạo gói hàng">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstItem="KbK-qP-8dO" firstAttribute="leading" secondItem="vND-Va-g35" secondAttribute="leading" id="9UZ-G6-djD"/>
-                                            <constraint firstItem="UF0-H1-YXl" firstAttribute="leading" secondItem="vND-Va-g35" secondAttribute="leading" constant="20" id="Bcb-of-Zfa"/>
-                                            <constraint firstItem="KbK-qP-8dO" firstAttribute="top" secondItem="wSB-xb-SqY" secondAttribute="bottom" id="JGL-RY-7bc"/>
-                                            <constraint firstItem="wSB-xb-SqY" firstAttribute="top" secondItem="vND-Va-g35" secondAttribute="top" id="PJb-v7-ITa"/>
-                                            <constraint firstAttribute="height" constant="1000" id="TdV-t5-kdq"/>
-                                            <constraint firstItem="UF0-H1-YXl" firstAttribute="top" secondItem="KbK-qP-8dO" secondAttribute="bottom" constant="10" id="V7I-Gj-qm6"/>
-                                            <constraint firstAttribute="trailing" secondItem="wSB-xb-SqY" secondAttribute="trailing" id="aQr-M7-LZy"/>
-                                            <constraint firstAttribute="trailing" secondItem="UF0-H1-YXl" secondAttribute="trailing" constant="20" id="hNQ-c7-AZc"/>
-                                            <constraint firstItem="wSB-xb-SqY" firstAttribute="leading" secondItem="vND-Va-g35" secondAttribute="leading" id="m40-aA-1bs"/>
-                                            <constraint firstAttribute="trailing" secondItem="KbK-qP-8dO" secondAttribute="trailing" id="szt-9t-jfg"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="vND-Va-g35" secondAttribute="bottom" id="8KM-OW-BJM"/>
-                                    <constraint firstItem="vND-Va-g35" firstAttribute="top" secondItem="SQC-lk-KRF" secondAttribute="top" id="VVi-AE-cgh"/>
-                                    <constraint firstItem="vND-Va-g35" firstAttribute="leading" secondItem="SQC-lk-KRF" secondAttribute="leading" id="Ves-jR-vdV"/>
-                                    <constraint firstAttribute="trailing" secondItem="vND-Va-g35" secondAttribute="trailing" id="cS0-Dk-44x"/>
-                                </constraints>
-                            </scrollView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="iU9-ka-M4N" id="oFk-iB-EGe"/>
+                                    <outlet property="delegate" destination="iU9-ka-M4N" id="wEd-x5-eOV"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="SQC-lk-KRF" secondAttribute="trailing" id="FLH-qg-STt"/>
-                            <constraint firstItem="vND-Va-g35" firstAttribute="width" secondItem="yuz-ti-Ng2" secondAttribute="width" id="GNN-hh-t5r"/>
-                            <constraint firstAttribute="bottom" secondItem="SQC-lk-KRF" secondAttribute="bottom" id="Who-Mx-DNp"/>
-                            <constraint firstItem="SQC-lk-KRF" firstAttribute="top" secondItem="yuz-ti-Ng2" secondAttribute="top" id="gc6-nY-ATY"/>
-                            <constraint firstItem="SQC-lk-KRF" firstAttribute="leading" secondItem="yuz-ti-Ng2" secondAttribute="leading" id="y3w-Xm-G0v"/>
+                            <constraint firstAttribute="trailing" secondItem="fgq-4z-6um" secondAttribute="trailing" id="7uh-U5-frk"/>
+                            <constraint firstItem="fgq-4z-6um" firstAttribute="leading" secondItem="yuz-ti-Ng2" secondAttribute="leading" id="FQ6-9g-uSY"/>
+                            <constraint firstItem="fgq-4z-6um" firstAttribute="top" secondItem="yuz-ti-Ng2" secondAttribute="top" id="GI2-vK-dHp"/>
+                            <constraint firstAttribute="bottom" secondItem="fgq-4z-6um" secondAttribute="bottom" id="QP5-KV-VIk"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="tableView" destination="fgq-4z-6um" id="Hoc-ek-v06"/>
                         <segue destination="M2v-FZ-JRe" kind="show" identifier="showPickupAddressScreen" id="cXp-F8-G6I"/>
                         <segue destination="xRQ-dc-yNd" kind="show" identifier="showUserInfoSegueIdentifier" id="m9g-QN-gnw"/>
                     </connections>
@@ -795,7 +748,6 @@
     <resources>
         <image name="back_icon" width="20" height="20"/>
         <image name="down-arrow 2" width="16" height="16"/>
-        <image name="sender_camera_gray" width="52" height="40"/>
         <image name="sender_note_icon" width="20" height="20"/>
         <image name="sender_time" width="21" height="21"/>
     </resources>

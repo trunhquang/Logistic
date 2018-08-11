@@ -6,3 +6,9 @@ struct StoryboardName {
     static let Dashboard            = "Dashboard"
     static let Information          = "Information"
 }
+struct XibIdentify {
+    struct Sender {
+        static let CreateParcelTypeTextFieldTableViewCell = "CreateParcelTypeTextFieldTableViewCell"
+        static let CreateParcelTypeTextViewTableViewCell  = "CreateParcelTypeTextViewTableViewCell"
+    }
+}

@@ -16,12 +16,5 @@ extension UIButton {
             setTitle(NSLocalizedString(newValue, comment: ""), for: .normal)
         }
     }
-    @IBInspectable var borderColor: UIColor {
-        get {
-            return .clear
-        } set {
-            layer.borderColor = borderColor.cgColor
-        }
-    }
 }
 

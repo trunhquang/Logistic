@@ -60,10 +60,10 @@ override func viewWillAppear(_ animated: Bool) {
 //        return 6
 //    }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//            if delegate != nil {
-//              delegate?.didChooseMenuAtIndex(indexPath.row)
-//            }
-//            tableView.deselectRowAtIndexPath(indexPath, animated: true)
+            if delegate != nil {
+                delegate?.didChooseMenuAtIndex(index: indexPath.row)
+            }
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 //    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
 //    if delegate != nil {
